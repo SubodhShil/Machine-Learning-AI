@@ -5,3 +5,4 @@ pypdf
 beautifulsoup4
 requests
 arxiv
+langchain-text-splitters
