@@ -1,0 +1,12 @@
+myenv/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+LangChain/.env
+
+# Ignore all .env files anywhere
+**/.env

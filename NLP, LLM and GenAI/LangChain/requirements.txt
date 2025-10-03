@@ -1,0 +1,5 @@
+langchain
+langchain-openai 
+ipykernel
+python-dotenv
+huggingface_hub
