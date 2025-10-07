@@ -12,3 +12,6 @@ google-genai
 chromadb
 langchain-chroma
 langchain-google-genai
+faiss-cpu
+chromadb
+langchain-chroma
