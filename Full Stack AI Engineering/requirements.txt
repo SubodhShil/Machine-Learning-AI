@@ -7,3 +7,8 @@ requests
 arxiv
 langchain-text-splitters
 httpx
+python-dotenv
+google-genai
+chromadb
+langchain-chroma
+langchain-google-genai
