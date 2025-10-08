@@ -15,3 +15,5 @@ langchain-google-genai
 faiss-cpu
 chromadb
 langchain-chroma
+langchain-groq
+httpx 
