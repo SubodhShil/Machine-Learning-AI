@@ -72,7 +72,7 @@ def retrieve_context(query: str):
     global vector_store
     if vector_store is None:
         raise ValueError("❌ Vector store is not initialized yet.")
-    
+
     retrieved_docs = vector_store.similarity_search(query, k=3)
     serialized = "\n\n".join(
         f"Source: {doc.metadata}\nContent: {doc.page_content}" for doc in retrieved_docs
