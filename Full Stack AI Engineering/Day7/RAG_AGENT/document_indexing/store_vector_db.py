@@ -32,3 +32,6 @@ def create_store_and_access_embeddings(document_splits, add_new_docs=False):
     count = len(stored_data.get("ids", []))
     print(f"✅ Chroma collection currently contains {count} document embeddings.")
     return vector_store
+
+if __name__ == "__main__":
+    pass

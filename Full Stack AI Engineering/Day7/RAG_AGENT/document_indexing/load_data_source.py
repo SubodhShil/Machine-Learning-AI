@@ -21,4 +21,4 @@ async def get_article_data(url: str):
 
 
 if __name__ == "__main__":
-    print(asyncio.run(get_article_data("https://www.bbc.com/news/articles/cvgmp428plvo")))
+    print(asyncio.run(get_article_data("https://www.bdstall.com/blog/how-to-use-cpap-machine/")))
