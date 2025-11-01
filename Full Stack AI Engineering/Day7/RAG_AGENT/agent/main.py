@@ -6,7 +6,6 @@ from langchain.agents import create_agent
 from langchain.chat_models import init_chat_model
 
 
-
 model = init_chat_model("groq:openai/gpt-oss-120b")
 
 import asyncio
@@ -14,8 +13,6 @@ article_url = input("Enter the article URL to load and index: ")
 docs = asyncio.run(get_article_data(article_url))
 vector_store = create_store_and_access_embeddings(docs)
 
-
-model = 
 
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str, k: int = 3):
@@ -39,9 +36,6 @@ def agent_executor(model, ):
     
     agent = create_agent(model, tools, system_prompt=prompt)
     return agent
-
-
-
 
 
 if __name__ == "__main__":
