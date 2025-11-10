@@ -41,3 +41,11 @@
 | `**`     | Matches **any number of directories (recursive)** | `**/*.pdf` → all PDFs in this folder *and subfolders* |
 | `[abc]`  | Matches **one character** from the list           | `file[123].txt` → `file1.txt`, `file2.txt`            |
 | `[!abc]` | Matches any character **except** those listed     | `file[!1].txt` → `file2.txt`, `fileA.txt`             |
+
+![Load vs lazy load](image.png)
+
+> Lazy load is good when you have a big number of PDFs, and it is harder to process all the PDFs in the memory. It load and process one document and remove the processed document from the memory.
+
+4. WebBaseLoader: Good for static webpages, doesn't handle JS-heavy pages very well (use SeleniumURLLoader for that)
+
+
