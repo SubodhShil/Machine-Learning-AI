@@ -1,5 +1,3 @@
-> Push gitbook first, langchain video 13 (10 min)
-
 > # Text Splitting 
 
 The process of breaking large text into multiple smaller, manageable pieces that an LLM can handle effectively 

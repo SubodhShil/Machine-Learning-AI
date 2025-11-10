@@ -17,8 +17,5 @@ chromadb
 langchain-chroma
 langchain-groq
 httpx 
-<<<<<<< HEAD
 langchain-huggingface
-=======
-lagnchain-huggingface
->>>>>>> cc51a717ad8321f2820f89a1485ef6c48466809b
+

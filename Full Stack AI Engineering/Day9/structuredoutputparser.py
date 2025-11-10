@@ -5,14 +5,17 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain.output_parsers import StructuredOutputParser, ResponseSchema
 
+
 from dotenv import load_dotenv
 load_dotenv()
 import time 
+
 
 model = ChatGoogleGenerativeAI(
     model='gemini-2.5-flash',
     api_key=os.getenv("GEMINI_API_KEY")
 )
+
 
 schema = [
     ResponseSchema(name='fact_1', description="Fact 1 about the topic"),
@@ -22,7 +25,9 @@ schema = [
 
 start_time = time.monotonic()
 
+
 parser = StructuredOutputParser.from_response_schemas(schema)
+
 
 template = PromptTemplate(
     template="Provide 3 interesting facts about the following superhero: {name} {format_instruction}",
@@ -30,8 +35,10 @@ template = PromptTemplate(
     partial_variables={'format_instruction': parser.get_format_instructions()}
 )
 
+
 chain = template | model | parser
 result = chain.invoke({'name': 'Spiderman'})
 end_time = time.monotonic()
 print(result)
 print(f"Time taken: {end_time - start_time} seconds")
+

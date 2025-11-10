@@ -9,4 +9,4 @@ loader = DirectoryLoader(
 docs = loader.lazy_load()
 # print(len(docs))
 for document in docs:
-    print(document.metadata)
+    print(document.metadata)    
