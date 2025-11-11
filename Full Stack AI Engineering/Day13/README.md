@@ -13,5 +13,3 @@ The process of breaking large text into multiple smaller, manageable pieces that
 2. Text structure based 
 3. Document structure based 
 4. Semantic meaning based 
-
-
