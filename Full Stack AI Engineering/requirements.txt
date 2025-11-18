@@ -18,5 +18,6 @@ langchain-chroma
 langchain-groq
 httpx 
 langchain-huggingface
+duckduckgo-search
 
 
