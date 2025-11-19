@@ -20,5 +20,6 @@ httpx
 langchain-huggingface
 duckduckgo-search
 langchain-experimental 
+langchain-agents
 
 
