@@ -21,5 +21,6 @@ langchain-huggingface
 duckduckgo-search
 langchain-experimental 
 langchain-agents
+Ipython
 
 
